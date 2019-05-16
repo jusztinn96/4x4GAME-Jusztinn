@@ -1,7 +1,8 @@
 .classpath
 .project
 .settings/
-.target
+.target/
+.src/
 
 # Compiled class file
 *.class
