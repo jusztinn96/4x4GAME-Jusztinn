@@ -1,0 +1,151 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="hu" lang="hu">
+<head><meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<title>szabalyok xref</title>
+<link type="text/css" rel="stylesheet" href="../../stylesheet.css" />
+</head>
+<body>
+<div id="overview"><a href="../../../apidocs/kavicsos_jatek/kavics/szabalyok.html">View Javadoc</a></div><pre>
+<a class="jxr_linenumber" name="L1" href="#L1">1</a>   <em class="jxr_comment">/* $$ This file has been instrumented by Clover 4.3.1#20180921211537623 $$ */</em><strong class="jxr_keyword">package</strong> kavicsos_jatek.kavics;
+<a class="jxr_linenumber" name="L2" href="#L2">2</a>   
+<a class="jxr_linenumber" name="L3" href="#L3">3</a>   <strong class="jxr_keyword">import</strong> javax.swing.*;
+<a class="jxr_linenumber" name="L4" href="#L4">4</a>   <strong class="jxr_keyword">import</strong> java.awt.*;
+<a class="jxr_linenumber" name="L5" href="#L5">5</a>   <strong class="jxr_keyword">import</strong> java.awt.event.*;
+<a class="jxr_linenumber" name="L6" href="#L6">6</a>   
+<a class="jxr_linenumber" name="L7" href="#L7">7</a>   <em class="jxr_javadoccomment">/**</em>
+<a class="jxr_linenumber" name="L8" href="#L8">8</a>   <em class="jxr_javadoccomment"> * Ez az oszt\u00e1ly felel a szab\u00e1lyok megjelen\u00edt\u00e9s\u00e9\u00e9rt.</em>
+<a class="jxr_linenumber" name="L9" href="#L9">9</a>   <em class="jxr_javadoccomment"> *  </em>
+<a class="jxr_linenumber" name="L10" href="#L10">10</a>  <em class="jxr_javadoccomment"> * @see kavicsos_jatek.kavics</em>
+<a class="jxr_linenumber" name="L11" href="#L11">11</a>  <em class="jxr_javadoccomment"> */</em>
+<a class="jxr_linenumber" name="L12" href="#L12">12</a>  <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">class</strong> <a href="../../kavicsos_jatek/kavics/szabalyok.html">szabalyok</a> <strong class="jxr_keyword">implements</strong> MouseListener {<strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">static</strong> <strong class="jxr_keyword">class</strong> __CLR4_3_11ce1cejvr491lg{<strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">static</strong> com_atlassian_clover.CoverageRecorder R;<strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">static</strong> com_atlassian_clover.CloverProfile[] profiles = { };@java.lang.SuppressWarnings(<span class="jxr_string">"unchecked"</span>) <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">static</strong> &lt;I, T <strong class="jxr_keyword">extends</strong> I&gt; I lambdaInc(<strong class="jxr_keyword">final</strong> <strong class="jxr_keyword">int</strong> i,<strong class="jxr_keyword">final</strong> T l,<strong class="jxr_keyword">final</strong> <strong class="jxr_keyword">int</strong> si){java.lang.reflect.InvocationHandler h=<strong class="jxr_keyword">new</strong> java.lang.reflect.InvocationHandler(){<strong class="jxr_keyword">public</strong> java.lang.Object invoke(java.lang.Object p,java.lang.reflect.Method m,java.lang.Object[] a) <strong class="jxr_keyword">throws</strong> Throwable{R.inc(i);R.inc(si);<strong class="jxr_keyword">try</strong>{<strong class="jxr_keyword">return</strong> m.invoke(l,a);}<strong class="jxr_keyword">catch</strong>(java.lang.reflect.InvocationTargetException e){<strong class="jxr_keyword">throw</strong> e.getCause()!=<strong class="jxr_keyword">null</strong>?e.getCause():<strong class="jxr_keyword">new</strong> RuntimeException(<span class="jxr_string">"Clover failed to invoke instrumented lambda"</span>,e);}}};<strong class="jxr_keyword">return</strong> (I)java.lang.reflect.Proxy.newProxyInstance(l.getClass().getClassLoader(),l.getClass().getInterfaces(),h);}<strong class="jxr_keyword">static</strong>{com_atlassian_clover.CoverageRecorder _R=<strong class="jxr_keyword">null</strong>;<strong class="jxr_keyword">try</strong>{com_atlassian_clover.CloverVersionInfo.An_old_version_of_clover_is_on_your_compilation_classpath___Please_remove___Required_version_is___4_3_1();<strong class="jxr_keyword">if</strong>(20180921211537623L!=com_atlassian_clover.CloverVersionInfo.getBuildStamp()){com_atlassian_clover.Clover.l(<span class="jxr_string">"[CLOVER] WARNING: The Clover version used in instrumentation does not match the runtime version. You need to run instrumented classes against the same version of Clover that you instrumented with."</span>);com_atlassian_clover.Clover.l(<span class="jxr_string">"[CLOVER] WARNING: Instr=4.3.1#20180921211537623,Runtime="</span>+com_atlassian_clover.CloverVersionInfo.getReleaseNum()+<span class="jxr_string">"#"</span>+com_atlassian_clover.CloverVersionInfo.getBuildStamp());}R=com_atlassian_clover.Clover.getNullRecorder();_R=com_atlassian_clover.Clover.getNullRecorder();_R=com_atlassian_clover.Clover.getRecorder(<span class="jxr_string">"\u0043\u003a\u005c\u005c\u0055\u0073\u0065\u0072\u0073\u005c\u005c\u006a\u0075\u0073\u007a\u0074\u005c\u005c\u0044\u0065\u0073\u006b\u0074\u006f\u0070\u005c\u005c\u0034\u0078\u0034\u0047\u0041\u004d\u0045\u002d\u004a\u0075\u0073\u007a\u0074\u0069\u006e\u006e\u005c\u005c\u0074\u0061\u0072\u0067\u0065\u0074\u002f\u0063\u006c\u006f\u0076\u0065\u0072\u002f\u0063\u006c\u006f\u0076\u0065\u0072\u002e\u0064\u0062"</span>,1558039096222L,8589935092L,1786,profiles,<strong class="jxr_keyword">new</strong> java.lang.String[]{<span class="jxr_string">"clover.distributed.coverage"</span>,<strong class="jxr_keyword">null</strong>});}<strong class="jxr_keyword">catch</strong>(java.lang.SecurityException e){java.lang.System.err.println(<span class="jxr_string">"[CLOVER] FATAL ERROR: Clover could not be initialised because it has insufficient security privileges. Please consult the Clover documentation on the security policy file changes required. ("</span>+e.getClass()+<span class="jxr_string">":"</span>+e.getMessage()+<span class="jxr_string">")"</span>);}<strong class="jxr_keyword">catch</strong>(java.lang.NoClassDefFoundError e){java.lang.System.err.println(<span class="jxr_string">"[CLOVER] FATAL ERROR: Clover could not be initialised. Are you sure you have Clover in the runtime classpath? ("</span>+e.getClass()+<span class="jxr_string">":"</span>+e.getMessage()+<span class="jxr_string">")"</span>);}<strong class="jxr_keyword">catch</strong>(java.lang.Throwable t){java.lang.System.err.println(<span class="jxr_string">"[CLOVER] FATAL ERROR: Clover could not be initialised because of an unexpected error. ("</span>+t.getClass()+<span class="jxr_string">":"</span>+t.getMessage()+<span class="jxr_string">")"</span>);}R=_R;}}<strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">static</strong> <strong class="jxr_keyword">final</strong> com_atlassian_clover.TestNameSniffer __CLR4_3_1_TEST_NAME_SNIFFER=com_atlassian_clover.TestNameSniffer.NULL_INSTANCE;
+<a class="jxr_linenumber" name="L13" href="#L13">13</a>  	<em class="jxr_javadoccomment">/**</em>
+<a class="jxr_linenumber" name="L14" href="#L14">14</a>  <em class="jxr_javadoccomment">	 * Seg\u00edts\u00e9g\u00e9vel megvizsg\u00e1ljuk a k\u00e9perny\u0151 m\u00e9ret\u00e9t.</em>
+<a class="jxr_linenumber" name="L15" href="#L15">15</a>  <em class="jxr_javadoccomment">	 */</em>
+<a class="jxr_linenumber" name="L16" href="#L16">16</a>  	Dimension dim = Toolkit.getDefaultToolkit().getScreenSize();
+<a class="jxr_linenumber" name="L17" href="#L17">17</a>  	<em class="jxr_javadoccomment">/**</em>
+<a class="jxr_linenumber" name="L18" href="#L18">18</a>  <em class="jxr_javadoccomment">	 * Grafikus fel\u00fclet kirajzol\u00e1s\u00e1hoz haszn\u00e1ljuk.</em>
+<a class="jxr_linenumber" name="L19" href="#L19">19</a>  <em class="jxr_javadoccomment">	 */</em>
+<a class="jxr_linenumber" name="L20" href="#L20">20</a>  	Drawing draw = <strong class="jxr_keyword">new</strong> <a href="../../kavicsos_jatek/kavics/szabalyok.html">Drawing</a>();
+<a class="jxr_linenumber" name="L21" href="#L21">21</a>  	<em class="jxr_javadoccomment">/**</em>
+<a class="jxr_linenumber" name="L22" href="#L22">22</a>  <em class="jxr_javadoccomment">	 * Ablak c\u00edmsor\u00e1nak elnevez\u00e9s\u00e9re haszn\u00e1ljuk.</em>
+<a class="jxr_linenumber" name="L23" href="#L23">23</a>  <em class="jxr_javadoccomment">	 */</em>
+<a class="jxr_linenumber" name="L24" href="#L24">24</a>  	JFrame szabaly = <strong class="jxr_keyword">new</strong> JFrame(<span class="jxr_string">"4x4 kavics j\u00e1t\u00e9k - szab\u00e1lyok"</span>);
+<a class="jxr_linenumber" name="L25" href="#L25">25</a>  	<em class="jxr_javadoccomment">/**</em>
+<a class="jxr_linenumber" name="L26" href="#L26">26</a>  <em class="jxr_javadoccomment">	 * \u00dczenet megjelen\u00edt\u00e9s\u00e9re szolg\u00e1l a j\u00e1t\u00e9kosok sz\u00e1m\u00e1ra.</em>
+<a class="jxr_linenumber" name="L27" href="#L27">27</a>  <em class="jxr_javadoccomment">	 */</em>
+<a class="jxr_linenumber" name="L28" href="#L28">28</a>  	JLabel uzenet = <strong class="jxr_keyword">new</strong> JLabel(<span class="jxr_string">"Olvasd el a szab\u00e1lyzatot figyelmesen!"</span>);
+<a class="jxr_linenumber" name="L29" href="#L29">29</a>  	<em class="jxr_javadoccomment">/**</em>
+<a class="jxr_linenumber" name="L30" href="#L30">30</a>  <em class="jxr_javadoccomment">	 * Vissza gombhoz v\u00e1ltoz\u00f3 deklar\u00e1l\u00e1s.</em>
+<a class="jxr_linenumber" name="L31" href="#L31">31</a>  <em class="jxr_javadoccomment">	 */</em>
+<a class="jxr_linenumber" name="L32" href="#L32">32</a>  	ImageIcon visszagomb;
+<a class="jxr_linenumber" name="L33" href="#L33">33</a>  	<em class="jxr_javadoccomment">/**</em>
+<a class="jxr_linenumber" name="L34" href="#L34">34</a>  <em class="jxr_javadoccomment">	 * H\u00e1tt\u00e9rk\u00e9phez v\u00e1ltoz\u00f3 deklar\u00e1l\u00e1s.</em>
+<a class="jxr_linenumber" name="L35" href="#L35">35</a>  <em class="jxr_javadoccomment">	 */</em>
+<a class="jxr_linenumber" name="L36" href="#L36">36</a>  	ImageIcon hatter;
+<a class="jxr_linenumber" name="L37" href="#L37">37</a>  	<em class="jxr_javadoccomment">/**</em>
+<a class="jxr_linenumber" name="L38" href="#L38">38</a>  <em class="jxr_javadoccomment">	 * Start gombhoz v\u00e1ltoz\u00f3 deklar\u00e1l\u00e1s.</em>
+<a class="jxr_linenumber" name="L39" href="#L39">39</a>  <em class="jxr_javadoccomment">	 */</em>
+<a class="jxr_linenumber" name="L40" href="#L40">40</a>  	ImageIcon elsomenu;
+<a class="jxr_linenumber" name="L41" href="#L41">41</a>  	<em class="jxr_javadoccomment">/**</em>
+<a class="jxr_linenumber" name="L42" href="#L42">42</a>  <em class="jxr_javadoccomment">	 * Szab\u00e1lyok gombhoz v\u00e1ltoz\u00f3 deklar\u00e1l\u00e1s.</em>
+<a class="jxr_linenumber" name="L43" href="#L43">43</a>  <em class="jxr_javadoccomment">	 */</em>
+<a class="jxr_linenumber" name="L44" href="#L44">44</a>  	ImageIcon szabalyok;
+<a class="jxr_linenumber" name="L45" href="#L45">45</a>  	<em class="jxr_javadoccomment">/**</em>
+<a class="jxr_linenumber" name="L46" href="#L46">46</a>  <em class="jxr_javadoccomment">	 * El\u0151zm\u00e9nyek gombhoz v\u00e1ltoz\u00f3 deklar\u00e1l\u00e1s.</em>
+<a class="jxr_linenumber" name="L47" href="#L47">47</a>  <em class="jxr_javadoccomment">	 */</em>
+<a class="jxr_linenumber" name="L48" href="#L48">48</a>  	ImageIcon harmadikmenu;
+<a class="jxr_linenumber" name="L49" href="#L49">49</a>  
+<a class="jxr_linenumber" name="L50" href="#L50">50</a>  	<em class="jxr_javadoccomment">/**</em>
+<a class="jxr_linenumber" name="L51" href="#L51">51</a>  <em class="jxr_javadoccomment">	 * Ablak megjelen\u00edt\u00e9s\u00e9t szolg\u00e1lja.</em>
+<a class="jxr_linenumber" name="L52" href="#L52">52</a>  <em class="jxr_javadoccomment">	 *  </em>
+<a class="jxr_linenumber" name="L53" href="#L53">53</a>  <em class="jxr_javadoccomment">	 * @see kavicsos_jatek.kavics</em>
+<a class="jxr_linenumber" name="L54" href="#L54">54</a>  <em class="jxr_javadoccomment">	 */</em>
+<a class="jxr_linenumber" name="L55" href="#L55">55</a>  	<strong class="jxr_keyword">public</strong> <a href="../../kavicsos_jatek/kavics/szabalyok.html">szabalyok</a>() {<strong class="jxr_keyword">try</strong>{__CLR4_3_11ce1cejvr491lg.R.inc(1742);
+<a class="jxr_linenumber" name="L56" href="#L56">56</a>  		
+<a class="jxr_linenumber" name="L57" href="#L57">57</a>  		__CLR4_3_11ce1cejvr491lg.R.inc(1743);hatter = <strong class="jxr_keyword">new</strong> ImageIcon(getClass().getClassLoader().getResource(<span class="jxr_string">"hatter_2.jpg"</span>));
+<a class="jxr_linenumber" name="L58" href="#L58">58</a>  		__CLR4_3_11ce1cejvr491lg.R.inc(1744);elsomenu = <strong class="jxr_keyword">new</strong> ImageIcon(getClass().getClassLoader().getResource(<span class="jxr_string">"start-gomb.jpg"</span>));
+<a class="jxr_linenumber" name="L59" href="#L59">59</a>  		__CLR4_3_11ce1cejvr491lg.R.inc(1745);harmadikmenu = <strong class="jxr_keyword">new</strong> ImageIcon(getClass().getClassLoader().getResource(<span class="jxr_string">"elozo-gomb.jpg"</span>));
+<a class="jxr_linenumber" name="L60" href="#L60">60</a>  		__CLR4_3_11ce1cejvr491lg.R.inc(1746);szabalyok = <strong class="jxr_keyword">new</strong> ImageIcon(getClass().getClassLoader().getResource(<span class="jxr_string">"szabalyzat.jpg"</span>));
+<a class="jxr_linenumber" name="L61" href="#L61">61</a>  		__CLR4_3_11ce1cejvr491lg.R.inc(1747);visszagomb = <strong class="jxr_keyword">new</strong> ImageIcon(getClass().getClassLoader().getResource(<span class="jxr_string">"visszagomb.png"</span>));
+<a class="jxr_linenumber" name="L62" href="#L62">62</a>  		__CLR4_3_11ce1cejvr491lg.R.inc(1748);szabaly.add(draw);
+<a class="jxr_linenumber" name="L63" href="#L63">63</a>  		__CLR4_3_11ce1cejvr491lg.R.inc(1749);draw.addMouseListener(<strong class="jxr_keyword">this</strong>);
+<a class="jxr_linenumber" name="L64" href="#L64">64</a>  		__CLR4_3_11ce1cejvr491lg.R.inc(1750);szabaly.setSize(800, 600);
+<a class="jxr_linenumber" name="L65" href="#L65">65</a>  		__CLR4_3_11ce1cejvr491lg.R.inc(1751);szabaly.setLocation(dim.width/2-szabaly.getSize().width/2, dim.height/2-szabaly.getSize().height/2);
+<a class="jxr_linenumber" name="L66" href="#L66">66</a>  		__CLR4_3_11ce1cejvr491lg.R.inc(1752);uzenet.setFont(<strong class="jxr_keyword">new</strong> Font(<span class="jxr_string">"Serif"</span>, Font.BOLD, 20));
+<a class="jxr_linenumber" name="L67" href="#L67">67</a>  		__CLR4_3_11ce1cejvr491lg.R.inc(1753);uzenet.setForeground(Color.black);
+<a class="jxr_linenumber" name="L68" href="#L68">68</a>  		__CLR4_3_11ce1cejvr491lg.R.inc(1754);uzenet.setHorizontalAlignment(SwingConstants.CENTER);
+<a class="jxr_linenumber" name="L69" href="#L69">69</a>  		__CLR4_3_11ce1cejvr491lg.R.inc(1755);szabaly.add(uzenet, <span class="jxr_string">"South"</span>);
+<a class="jxr_linenumber" name="L70" href="#L70">70</a>  		__CLR4_3_11ce1cejvr491lg.R.inc(1756);szabaly.setVisible(<strong class="jxr_keyword">true</strong>);
+<a class="jxr_linenumber" name="L71" href="#L71">71</a>  	}<strong class="jxr_keyword">finally</strong>{__CLR4_3_11ce1cejvr491lg.R.flushNeeded();}}
+<a class="jxr_linenumber" name="L72" href="#L72">72</a>  
+<a class="jxr_linenumber" name="L73" href="#L73">73</a>  	<em class="jxr_javadoccomment">/**</em>
+<a class="jxr_linenumber" name="L74" href="#L74">74</a>  <em class="jxr_javadoccomment">	 * A h\u00e1tt\u00e9rk\u00e9p \u00e9s a men\u00fcpontok elhelyez\u00e9s\u00e9re szolg\u00e1l az ablakban.</em>
+<a class="jxr_linenumber" name="L75" href="#L75">75</a>  <em class="jxr_javadoccomment">	 */</em>
+<a class="jxr_linenumber" name="L76" href="#L76">76</a>  	<strong class="jxr_keyword">class</strong> <a href="../../kavicsos_jatek/kavics/szabalyok.html">Drawing</a> <strong class="jxr_keyword">extends</strong> JComponent {
+<a class="jxr_linenumber" name="L77" href="#L77">77</a>  		<em class="jxr_javadoccomment">/**</em>
+<a class="jxr_linenumber" name="L78" href="#L78">78</a>  <em class="jxr_javadoccomment">		 * @param g Mez\u0151t elv\u00e1laszt\u00f3 vonalak kirajzol\u00e1s\u00e1ra szolg\u00e1l.</em>
+<a class="jxr_linenumber" name="L79" href="#L79">79</a>  <em class="jxr_javadoccomment">		 */</em>
+<a class="jxr_linenumber" name="L80" href="#L80">80</a>  		<strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">void</strong> paint(Graphics g) {<strong class="jxr_keyword">try</strong>{__CLR4_3_11ce1cejvr491lg.R.inc(1757);
+<a class="jxr_linenumber" name="L81" href="#L81">81</a>  			__CLR4_3_11ce1cejvr491lg.R.inc(1758);Graphics2D g2 = (Graphics2D) g;
+<a class="jxr_linenumber" name="L82" href="#L82">82</a>  			__CLR4_3_11ce1cejvr491lg.R.inc(1759);g.drawImage(hatter.getImage(), 0, 0, <strong class="jxr_keyword">this</strong>);
+<a class="jxr_linenumber" name="L83" href="#L83">83</a>  			__CLR4_3_11ce1cejvr491lg.R.inc(1760);g.drawImage(elsomenu.getImage(), 75, 425, <strong class="jxr_keyword">this</strong>);
+<a class="jxr_linenumber" name="L84" href="#L84">84</a>  			__CLR4_3_11ce1cejvr491lg.R.inc(1761);g.drawImage(visszagomb.getImage(), 0, 0, <strong class="jxr_keyword">this</strong>);
+<a class="jxr_linenumber" name="L85" href="#L85">85</a>  			__CLR4_3_11ce1cejvr491lg.R.inc(1762);g.drawImage(szabalyok.getImage(), 100, 175, <strong class="jxr_keyword">this</strong>);
+<a class="jxr_linenumber" name="L86" href="#L86">86</a>  			__CLR4_3_11ce1cejvr491lg.R.inc(1763);g.drawImage(harmadikmenu.getImage(), 425, 425, <strong class="jxr_keyword">this</strong>);
+<a class="jxr_linenumber" name="L87" href="#L87">87</a>  		}<strong class="jxr_keyword">finally</strong>{__CLR4_3_11ce1cejvr491lg.R.flushNeeded();}}
+<a class="jxr_linenumber" name="L88" href="#L88">88</a>  	}
+<a class="jxr_linenumber" name="L89" href="#L89">89</a>  	
+<a class="jxr_linenumber" name="L90" href="#L90">90</a>  	<em class="jxr_javadoccomment">/**</em>
+<a class="jxr_linenumber" name="L91" href="#L91">91</a>  <em class="jxr_javadoccomment">	 * @param e Eg\u00e9rmozg\u00e1s megfigyel\u00e9s\u00e9re szolg\u00e1l.</em>
+<a class="jxr_linenumber" name="L92" href="#L92">92</a>  <em class="jxr_javadoccomment">	 */</em>
+<a class="jxr_linenumber" name="L93" href="#L93">93</a>  	<strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">void</strong> mousePressed(MouseEvent e) {<strong class="jxr_keyword">try</strong>{__CLR4_3_11ce1cejvr491lg.R.inc(1764);
+<a class="jxr_linenumber" name="L94" href="#L94">94</a>  	}<strong class="jxr_keyword">finally</strong>{__CLR4_3_11ce1cejvr491lg.R.flushNeeded();}}
+<a class="jxr_linenumber" name="L95" href="#L95">95</a>  
+<a class="jxr_linenumber" name="L96" href="#L96">96</a>  	<em class="jxr_javadoccomment">/**</em>
+<a class="jxr_linenumber" name="L97" href="#L97">97</a>  <em class="jxr_javadoccomment">	 * Eg\u00e9r kattint\u00e1sok \u00e9rz\u00e9kel\u00e9s\u00e9re \u00e9s kezel\u00e9s\u00e9re szolg\u00e1l.</em>
+<a class="jxr_linenumber" name="L98" href="#L98">98</a>  <em class="jxr_javadoccomment">	 * Men\u00fcpontokra kattintva az megfelel\u0151 esem\u00e9nyt hajtja v\u00e9gre.</em>
+<a class="jxr_linenumber" name="L99" href="#L99">99</a>  <em class="jxr_javadoccomment">	 * @param e Eg\u00e9rmozg\u00e1s megfigyel\u00e9s\u00e9re szolg\u00e1l.</em>
+<a class="jxr_linenumber" name="L100" href="#L100">100</a> <em class="jxr_javadoccomment">	 */</em>
+<a class="jxr_linenumber" name="L101" href="#L101">101</a> 	<strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">void</strong> mouseReleased(MouseEvent e) {<strong class="jxr_keyword">try</strong>{__CLR4_3_11ce1cejvr491lg.R.inc(1765);
+<a class="jxr_linenumber" name="L102" href="#L102">102</a> 		__CLR4_3_11ce1cejvr491lg.R.inc(1766);<strong class="jxr_keyword">int</strong> row = e.getX();
+<a class="jxr_linenumber" name="L103" href="#L103">103</a> 		__CLR4_3_11ce1cejvr491lg.R.inc(1767);<strong class="jxr_keyword">int</strong> col = e.getY();
+<a class="jxr_linenumber" name="L104" href="#L104">104</a> 		__CLR4_3_11ce1cejvr491lg.R.inc(1768);<strong class="jxr_keyword">if</strong> ((((row &gt;= 1 &amp;&amp; row &lt;= 40 &amp;&amp; col &gt;= 0 &amp;&amp; col &lt;= 40)&amp;&amp;(__CLR4_3_11ce1cejvr491lg.R.iget(1769)!=0|<strong class="jxr_keyword">true</strong>))||(__CLR4_3_11ce1cejvr491lg.R.iget(1770)==0&amp;false)))
+<a class="jxr_linenumber" name="L105" href="#L105">105</a> 			{{
+<a class="jxr_linenumber" name="L106" href="#L106">106</a> 			__CLR4_3_11ce1cejvr491lg.R.inc(1771);szabaly.dispose();
+<a class="jxr_linenumber" name="L107" href="#L107">107</a> 			__CLR4_3_11ce1cejvr491lg.R.inc(1772);<strong class="jxr_keyword">new</strong> <a href="../../kavicsos_jatek/kavics/kezdokepernyo.html">kezdokepernyo</a>();
+<a class="jxr_linenumber" name="L108" href="#L108">108</a> 			}
+<a class="jxr_linenumber" name="L109" href="#L109">109</a> 		}__CLR4_3_11ce1cejvr491lg.R.inc(1773);<strong class="jxr_keyword">if</strong> ((((row &gt;= 75 &amp;&amp; row &lt;= 375 &amp;&amp; col &gt;= 425 &amp;&amp; col &lt;= 505)&amp;&amp;(__CLR4_3_11ce1cejvr491lg.R.iget(1774)!=0|<strong class="jxr_keyword">true</strong>))||(__CLR4_3_11ce1cejvr491lg.R.iget(1775)==0&amp;false)))
+<a class="jxr_linenumber" name="L110" href="#L110">110</a> 			{{
+<a class="jxr_linenumber" name="L111" href="#L111">111</a> 			__CLR4_3_11ce1cejvr491lg.R.inc(1776);szabaly.dispose();
+<a class="jxr_linenumber" name="L112" href="#L112">112</a> 			__CLR4_3_11ce1cejvr491lg.R.inc(1777);<strong class="jxr_keyword">new</strong> <a href="../../kavicsos_jatek/kavics/jatekablak.html">jatekablak</a>();
+<a class="jxr_linenumber" name="L113" href="#L113">113</a> 			}
+<a class="jxr_linenumber" name="L114" href="#L114">114</a> 		}__CLR4_3_11ce1cejvr491lg.R.inc(1778);<strong class="jxr_keyword">if</strong> ((((row &gt;= 425 &amp;&amp; row &lt;= 725 &amp;&amp; col &gt;= 425 &amp;&amp; col &lt;= 505)&amp;&amp;(__CLR4_3_11ce1cejvr491lg.R.iget(1779)!=0|<strong class="jxr_keyword">true</strong>))||(__CLR4_3_11ce1cejvr491lg.R.iget(1780)==0&amp;false)))
+<a class="jxr_linenumber" name="L115" href="#L115">115</a> 			{{
+<a class="jxr_linenumber" name="L116" href="#L116">116</a> 			__CLR4_3_11ce1cejvr491lg.R.inc(1781);szabaly.dispose();
+<a class="jxr_linenumber" name="L117" href="#L117">117</a> 			__CLR4_3_11ce1cejvr491lg.R.inc(1782);<strong class="jxr_keyword">new</strong> <a href="../../kavicsos_jatek/kavics/elozmenyek.html">elozmenyek</a>();
+<a class="jxr_linenumber" name="L118" href="#L118">118</a> 			}
+<a class="jxr_linenumber" name="L119" href="#L119">119</a> 	}}<strong class="jxr_keyword">finally</strong>{__CLR4_3_11ce1cejvr491lg.R.flushNeeded();}}
+<a class="jxr_linenumber" name="L120" href="#L120">120</a> 
+<a class="jxr_linenumber" name="L121" href="#L121">121</a> 	<em class="jxr_javadoccomment">/**</em>
+<a class="jxr_linenumber" name="L122" href="#L122">122</a> <em class="jxr_javadoccomment">	 * @param e Eg\u00e9rmozg\u00e1s megfigyel\u00e9s\u00e9re szolg\u00e1l.</em>
+<a class="jxr_linenumber" name="L123" href="#L123">123</a> <em class="jxr_javadoccomment">	 */</em>
+<a class="jxr_linenumber" name="L124" href="#L124">124</a> 	<strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">void</strong> mouseClicked(MouseEvent e) {<strong class="jxr_keyword">try</strong>{__CLR4_3_11ce1cejvr491lg.R.inc(1783);
+<a class="jxr_linenumber" name="L125" href="#L125">125</a> 	}<strong class="jxr_keyword">finally</strong>{__CLR4_3_11ce1cejvr491lg.R.flushNeeded();}}
+<a class="jxr_linenumber" name="L126" href="#L126">126</a> 
+<a class="jxr_linenumber" name="L127" href="#L127">127</a> 	<em class="jxr_javadoccomment">/**</em>
+<a class="jxr_linenumber" name="L128" href="#L128">128</a> <em class="jxr_javadoccomment">	 * @param e Eg\u00e9rmozg\u00e1s megfigyel\u00e9s\u00e9re szolg\u00e1l.</em>
+<a class="jxr_linenumber" name="L129" href="#L129">129</a> <em class="jxr_javadoccomment">	 */</em>
+<a class="jxr_linenumber" name="L130" href="#L130">130</a> 	<strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">void</strong> mouseEntered(MouseEvent e) {<strong class="jxr_keyword">try</strong>{__CLR4_3_11ce1cejvr491lg.R.inc(1784);
+<a class="jxr_linenumber" name="L131" href="#L131">131</a> 	}<strong class="jxr_keyword">finally</strong>{__CLR4_3_11ce1cejvr491lg.R.flushNeeded();}}
+<a class="jxr_linenumber" name="L132" href="#L132">132</a> 
+<a class="jxr_linenumber" name="L133" href="#L133">133</a> 	<em class="jxr_javadoccomment">/**</em>
+<a class="jxr_linenumber" name="L134" href="#L134">134</a> <em class="jxr_javadoccomment">	 * @param e Eg\u00e9rmozg\u00e1s megfigyel\u00e9s\u00e9re szolg\u00e1l.</em>
+<a class="jxr_linenumber" name="L135" href="#L135">135</a> <em class="jxr_javadoccomment">	 */</em>
+<a class="jxr_linenumber" name="L136" href="#L136">136</a> 	<strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">void</strong> mouseExited(MouseEvent e) {<strong class="jxr_keyword">try</strong>{__CLR4_3_11ce1cejvr491lg.R.inc(1785);
+<a class="jxr_linenumber" name="L137" href="#L137">137</a> 	}<strong class="jxr_keyword">finally</strong>{__CLR4_3_11ce1cejvr491lg.R.flushNeeded();}}
+<a class="jxr_linenumber" name="L138" href="#L138">138</a> }
+</pre>
+<hr/>
+<div id="footer">Copyright &#169; 2019 <a href="https://www.inf.unideb.hu/">Debreceni Egyetem, Informatikai Kar</a>. All rights reserved.</div>
+</body>
+</html>

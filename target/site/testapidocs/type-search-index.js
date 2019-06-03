@@ -1,0 +1,1 @@
+typeSearchIndex = [{"p":"kavicsos_jatek.kavics","l":"jatekablakTest"},{"p":"kavicsos_jatek.kavics","l":"jatekvegeTest"}]
