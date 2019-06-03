@@ -72,6 +72,7 @@ public class jatekablak implements KeyListener, MouseListener {
 	/**
 	 * Az XML dokumentumban a mérkőzés befejezésének dátumát tárolja el.
 	 */
+	
 	static String pontosdatum;
 	/**
 	 * Az XML fájlra ezen változó segítségével hivatkozunk.
@@ -79,13 +80,20 @@ public class jatekablak implements KeyListener, MouseListener {
 	static File fjl = null;
 
 	/**
+	 * Mezők tárolására szolgál.
+	 */
+	static int mezok;
+	
+	/**
+	 * Játék véget érésének tesztelésére.
+	 */
+	static boolean jatekveget = false;
+	
+	/**
 	 * Ablak megjelenítését szolgálja.
 	 *  
 	 * @see kavicsos_jatek.kavics
 	 */
-	
-	static int mezok;
-	
 	public jatekablak() 
 	{
 		for (int i = 0; i < boardPictures.length; i++)
@@ -104,7 +112,7 @@ public class jatekablak implements KeyListener, MouseListener {
 	}
 	
 	/**
-	 * Naplózási metódus
+	 * Naplózási metódus.
 	 */
 	private static final Logger logger = LoggerFactory.getLogger(jatekablak.class);
 
@@ -129,7 +137,7 @@ public class jatekablak implements KeyListener, MouseListener {
 	}
 	
 	/**
-	 * Megszámolja, hogy a táblánk valóban 4x4 mezőből áll
+	 * Megszámolja, hogy a táblánk valóban 4x4 mezőből áll.
 	 * @return Mezők darabszáma
 	 */
 	int mezok_ellenorzese() 
@@ -261,6 +269,7 @@ public class jatekablak implements KeyListener, MouseListener {
 		JOptionPane.showMessageDialog(null, uzenet , "Eredmény", JOptionPane.INFORMATION_MESSAGE);
 		jatek.dispose();
 		new kezdokepernyo();
+		jatekveget = true;
 	}
 	
 	/**
@@ -392,11 +401,12 @@ public class jatekablak implements KeyListener, MouseListener {
 	}
 
 	/**
-	 * Mezőt elválasztó vonalak kirajzolására szolgál.
 	 * Kattintás megvizsgálása után a kavics képének megváltoztatása.
-	 *
 	 */
 	class Drawing extends JComponent {
+		/**
+		 * @param g Mezőt elválasztó vonalak kirajzolására szolgál.
+		 */
 		public void paint(Graphics g) {
 			Graphics2D g2 = (Graphics2D) g;
 			for (int row = 0; row < 4; row++)
@@ -415,7 +425,7 @@ public class jatekablak implements KeyListener, MouseListener {
 	}
 	
 	/**
-	 * Az egér kattintásának érzékelésére szolgál.
+	 * @param e Az egér kattintásának érzékelésére szolgál.
 	 * A kör átadása a másik játékosnak.
 	 */
 	public void mouseReleased(MouseEvent e) 
@@ -438,7 +448,7 @@ public class jatekablak implements KeyListener, MouseListener {
 	}
 	
 	/**
-	 * SPACE, valamint az ESC billentyűk kezelése.
+	 * @param e SPACE, valamint az ESC billentyűk kezelése.
 	 */
 	public void keyPressed(KeyEvent e) {
 		/**
@@ -467,21 +477,39 @@ public class jatekablak implements KeyListener, MouseListener {
 		
 	}
 	
+	/**
+	 * @param e Egérmozgás megfigyelésére szolgál.
+	 */
 	public void keyReleased(KeyEvent e) {
     }
 
+	/**
+	 * @param e Egérmozgás megfigyelésére szolgál.
+	 */
 	public void keyTyped(KeyEvent e) {
 	}  
 	
+	/**
+	 * @param e Egérmozgás megfigyelésére szolgál.
+	 */
 	public void mouseClicked(MouseEvent e) {	
 	}
 
+	/**
+	 * @param e Egérmozgás megfigyelésére szolgál.
+	 */
 	public void mouseEntered(MouseEvent e) {		
 	}
 
+	/**
+	 * @param e Egérmozgás megfigyelésére szolgál.
+	 */
 	public void mouseExited(MouseEvent e) {
 	}
 
+	/**
+	 * @param e Egérmozgás megfigyelésére szolgál.
+	 */
 	public void mousePressed(MouseEvent e) {
 	}
 }

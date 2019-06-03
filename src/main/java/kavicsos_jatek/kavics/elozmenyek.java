@@ -64,6 +64,10 @@ public class elozmenyek implements MouseListener {
 	 *
 	 */
 	class Drawing extends JComponent {
+		/**
+		 * Festésre szolgál.
+		 * @param g a grafika
+		 */
 		public void paint(Graphics g) {
 			Graphics2D g2 = (Graphics2D) g;
 			g.drawImage(hatter.getImage(), 0, 0, this);
@@ -71,13 +75,15 @@ public class elozmenyek implements MouseListener {
 			g.drawImage(harmadikmenu.getImage(), 250, 425, this);
 		}
 	}
-	
+
+	/**
+	 * @param e Egérkattintás kezelésére szolgál.
+	 */
 	public void mousePressed(MouseEvent e) {
 	}
 
 	/**
-	 * Egér kattintások érzékelésére és kezelésére szolgál.
-	 * Menüpontokra kattintva az megfelelő eseményt hajtja végre.
+	 * @param e Egérkezelésre szolgál. A menüpontokra kattintva a megfelelő esemény hajtja végre.
 	 */
 	public void mouseReleased(MouseEvent e) {
 		int row = e.getX();
@@ -99,13 +105,21 @@ public class elozmenyek implements MouseListener {
 			}
 			}
 	}
-
+	/**
+	 * @param e Egérmozgás megfigyelésére szolgál.
+	 */
 	public void mouseClicked(MouseEvent e) {
 	}
 
+	/**
+	 * @param e Egérmozgás megfigyelésére szolgál.
+	 */
 	public void mouseEntered(MouseEvent e) {
 	}
 
+	/**
+	 * @param e Egérmozgás megfigyelésére szolgál.
+	 */
 	public void mouseExited(MouseEvent e) {
 	}
 }

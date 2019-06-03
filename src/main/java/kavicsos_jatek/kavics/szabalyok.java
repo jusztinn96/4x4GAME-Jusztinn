@@ -72,9 +72,11 @@ public class szabalyok implements MouseListener {
 
 	/**
 	 * A háttérkép és a menüpontok elhelyezésére szolgál az ablakban.
-	 *
 	 */
 	class Drawing extends JComponent {
+		/**
+		 * @param g Mezőt elválasztó vonalak kirajzolására szolgál.
+		 */
 		public void paint(Graphics g) {
 			Graphics2D g2 = (Graphics2D) g;
 			g.drawImage(hatter.getImage(), 0, 0, this);
@@ -85,12 +87,16 @@ public class szabalyok implements MouseListener {
 		}
 	}
 	
+	/**
+	 * @param e Egérmozgás megfigyelésére szolgál.
+	 */
 	public void mousePressed(MouseEvent e) {
 	}
 
 	/**
 	 * Egér kattintások érzékelésére és kezelésére szolgál.
 	 * Menüpontokra kattintva az megfelelő eseményt hajtja végre.
+	 * @param e Egérmozgás megfigyelésére szolgál.
 	 */
 	public void mouseReleased(MouseEvent e) {
 		int row = e.getX();
@@ -112,12 +118,21 @@ public class szabalyok implements MouseListener {
 			}
 	}
 
+	/**
+	 * @param e Egérmozgás megfigyelésére szolgál.
+	 */
 	public void mouseClicked(MouseEvent e) {
 	}
 
+	/**
+	 * @param e Egérmozgás megfigyelésére szolgál.
+	 */
 	public void mouseEntered(MouseEvent e) {
 	}
 
+	/**
+	 * @param e Egérmozgás megfigyelésére szolgál.
+	 */
 	public void mouseExited(MouseEvent e) {
 	}
 }

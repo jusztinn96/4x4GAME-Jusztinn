@@ -1,6 +1,6 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  	
+
   	<modelVersion>4.0.0</modelVersion>
   	<groupId>kavicsos_jatek.kavics</groupId>
   	<artifactId>kavics</artifactId>
@@ -14,18 +14,20 @@
     	<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<mainClass>kavicsos_jatek.kavics.kezdokepernyo</mainClass>
+		<maven.compiler.source>1.8</maven.compiler.source>
+    	<maven.compiler.target>1.8</maven.compiler.target>
  	</properties>
- 	
+
  	<inceptionYear>2019</inceptionYear>
 	<organization>
 		<name>Debreceni Egyetem, Informatikai Kar</name>
 		<url>https://www.inf.unideb.hu/</url>
 	</organization>
-  
+
  	<description>
 	4x4 kavics játék, melynek lényege, hogy két játékos felváltva vesz fel 1-4db kavicsot és az veszít, aki utolára lép.
   	</description>
-  
+
   	<developers>
   		<developer>
   			 <id>jusztinn96</id>
@@ -34,20 +36,20 @@
   			 <url>http://www.juhaszbalazs.hu</url>
   		</developer>
   	</developers>
-  
+
  	 <scm>
-		<connection>scm:git:https://github.com/jusztinn96/kavics.git</connection>
-		<url>https://github.com/jusztinn96/kavics</url>
-		<developerConnection>scm:git:git@github.com/jusztinn96/kavics.git</developerConnection>
+		<connection>scm:git:https://github.com/jusztinn96/4x4GAME-Jusztinn.git</connection>
+		<url>https://github.com/jusztinn96/4x4GAME-Jusztinn</url>
+		<developerConnection>scm:git:git@github.com/jusztinn96/4x4GAME-Jusztinn.git</developerConnection>
 	</scm>
-  
+
   	<licenses>
 		<license>
 			<name>GNU General Public License Version 3.0</name>
 			<url>http://www.gnu.org/licenses/gpl-3.0</url>
 		</license>
 	</licenses>
-  
+
 	<dependencies>
 		<dependency>
 			<groupId>com.googlecode.json-simple</groupId>
@@ -57,9 +59,14 @@
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
-			<version>4.10</version>
+			<version>4.12</version>
 			<scope>test</scope>
 		</dependency>
+<!--		<dependency>-->
+<!--			<groupId>org.jacoco</groupId>-->
+<!--			<artifactId>jacoco-maven-plugin</artifactId>-->
+<!--			<version>0.8.2</version>-->
+<!--		</dependency>-->
 		<dependency>
 			<groupId>ch.qos.logback</groupId>
 			<artifactId>logback-classic</artifactId>
@@ -77,21 +84,6 @@
 	<build>
 		<plugins>
 			<plugin>
-		        <groupId>com.atlassian.maven.plugins</groupId>
-		        <artifactId>clover-maven-plugin</artifactId>
-		        <configuration>
-		          <targetPercentage>50%</targetPercentage>
-		        </configuration>
-		        <executions>
-		          <execution>
-		            <phase>verify</phase>
-		            <goals>
-		              <goal>check</goal>
-		            </goals>
-		          </execution>
-		        </executions>
-		    </plugin>
-			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-dependency-plugin</artifactId>
 				<version>3.1.0</version>
@@ -106,6 +98,15 @@
 						</configuration>
 					</execution>
 				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-site-plugin</artifactId>
+				<version>3.7.1</version>
+				<configuration>
+					<outputEncoding>${project.reporting.outputEncoding}</outputEncoding>
+					<locales>hu</locales>
+				</configuration>
 			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -236,11 +237,43 @@
 					</execution>
 				</executions>
 			</plugin>
+			<plugin> 
+            	<groupId>org.openclover</groupId> 
+            	<artifactId>clover-maven-plugin</artifactId> 
+            	<version>4.3.1</version> 
+	            <executions> 
+		            <execution> 
+		            	<phase>generate-sources</phase> 
+		            	<goals> 
+		            		<goal>setup</goal> 
+		            	</goals> 
+		            </execution> 
+	            </executions> 
+            </plugin>
 		</plugins>
 	</build>
 
 	<reporting>
 		<plugins>
+            <plugin>
+                <groupId>org.openclover</groupId>
+                <artifactId>clover-maven-plugin</artifactId>
+                <version>4.3.1</version>
+            </plugin>
+
+<!--            <plugin>-->
+<!--                  <groupId>org.jacoco</groupId>-->
+<!--                  <artifactId>jacoco-maven-plugin</artifactId>-->
+<!--                  <version>0.8.2</version>-->
+<!--                  <reportSets>-->
+<!--                      <reportSet>-->
+<!--                          <reports>-->
+<!--                              <report>report</report>-->
+<!--                          </reports>-->
+<!--                      </reportSet>-->
+<!--                  </reportSets>-->
+<!--              </plugin>-->
+
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-javadoc-plugin</artifactId>
@@ -261,7 +294,7 @@
 				<artifactId>maven-checkstyle-plugin</artifactId>
 				<version>3.0.0</version>
 				<configuration>
-					<configLocation>${basedir}/src/main/resources/checkstyle.xml</configLocation>
+					<configLocation>src/main/resources/checkstyle.xml</configLocation>
 					<encoding>UTF-8</encoding>
 					<consoleOutput>true</consoleOutput>
 				</configuration>
