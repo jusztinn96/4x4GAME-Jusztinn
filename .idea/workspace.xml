@@ -2,28 +2,423 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d837cc2a-17ff-4983-8fa8-bc768baa2ebb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/kavicsos_jatek/kavics/package-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/checkstyle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/kavicsos_jatek/kavics/jatekablakTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/kavicsosjatek/kavics/controller/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/kavicsosjatek/kavics/model/Ellenorzes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/kavicsosjatek/kavics/model/dao/Dao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/kavicsosjatek/kavics/model/dao/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/kavicsosjatek/kavics/model/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/kavicsosjatek/kavics/view/package-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bin/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kavics.iml" beforeDir="false" afterPath="$PROJECT_DIR$/kavics.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kavicsos_jatek/kavics/elozmenyek.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kavicsos_jatek/kavics/elozmenyek.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kavicsos_jatek/kavics/kezdokepernyo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kavicsos_jatek/kavics/kezdokepernyo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/kavicsos_jatek/kavics/jatekablak_test.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/0.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/elozo-gomb.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/elozo-gombok.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ered.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hatter.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hatter_2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hatter_3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/start-gomb.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/szabalyok-gomb.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/szabalyzat.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/visszagomb.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/logback-test.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kavicsos_jatek/kavics/elozmenyek.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kavicsosjatek/kavics/controller/Elozmenyek.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kavicsos_jatek/kavics/jatekablak.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kavicsosjatek/kavics/view/Jatekablak.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kavicsos_jatek/kavics/kezdokepernyo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kavicsosjatek/kavics/controller/Kezdokepernyo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kavicsos_jatek/kavics/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kavicsosjatek/kavics/package-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kavicsos_jatek/kavics/szabalyok.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kavicsosjatek/kavics/controller/Szabalyok.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/kavicsos_jatek/kavics/jatekablakTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/kavicsosjatek/kavics/jatekablakTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/kavicsos_jatek/kavics/jatekvegeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/kavicsosjatek/kavics/jatekvegeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/checkstyle-cachefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/checkstyle-checker.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/checkstyle-header.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/checkstyle-result.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/clover/classes/0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/clover/classes/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/clover/classes/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/clover/classes/checkstyle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/clover/classes/elozo-gomb.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/clover/classes/elozo-gombok.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/clover/classes/ered.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/clover/classes/hatter.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/clover/classes/hatter_2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/clover/classes/hatter_3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/clover/classes/instrumentation.ser" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/clover/classes/start-gomb.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/clover/classes/szabalyok-gomb.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/clover/classes/szabalyzat.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/clover/classes/visszagomb.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/clover/clover.db" beforeDir="false" afterPath="$PROJECT_DIR$/target/clover/clover.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/clover/clover.db5zw40ivsu2s4_0_hrs9p6_jvr4rtpc.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/clover/clover.db5zw40kuty610_1_d9muym_jvr4ru5x.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/clover/clover.db90alzdgwjrf8_0_ryozsg_jvr2l6n2.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/clover/clover.db91s6s71uuzkk_0_ryozsg_jvr3cc6s.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/clover/clover.db9271e49s2n4k_0_ryozsg_jvr3jv5u.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/clover/clover.dbd9muym_jvr4ru5w" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/clover/clover.dbhrs9p6_jvr4rtp8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/clover/clover.dbhrs9p6_jvr4rtp8.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/clover/clover.dbryozsg_jvr2l6mx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/clover/clover.dbryozsg_jvr2l6mx.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/clover/clover.dbryozsg_jvr3cc6o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/clover/clover.dbryozsg_jvr3jv5q" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/clover/clover.dbryozsg_jvr3jv5q.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/clover/generated-resources/licenses.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/clover/generated-resources/licenses/apache license, version 2.0 - license-2.0.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/clover/generated-resources/licenses/atlassian customer agreement - customer-agreement.txt.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/clover/generated-resources/licenses/eclipse public license - v 1.0 - epl-v10.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/clover/generated-resources/licenses/gnu lesser general public license - lgpl-2.1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/clover/generated-resources/licenses/mit license - mit-license.php.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/clover/generated-resources/licenses/new bsd license - bsd-license.php.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/clover/generated-resources/licenses/the apache software license, version 2.0 - license-2.0.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/clover/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/clover/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/clover/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/clover/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/clover/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/clover/src-instrumented/kavicsos_jatek/kavics/elozmenyek.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/clover/src-instrumented/kavicsos_jatek/kavics/jatekablak.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/clover/src-instrumented/kavicsos_jatek/kavics/kezdokepernyo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/clover/src-instrumented/kavicsos_jatek/kavics/package-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/clover/src-instrumented/kavicsos_jatek/kavics/szabalyok.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/clover/src-test-instrumented/kavicsos_jatek/kavics/jatekablakTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/clover/src-test-instrumented/kavicsos_jatek/kavics/jatekvegeTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/clover/src-test/kavicsos_jatek/kavics/jatekablakTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/clover/src/kavicsos_jatek/kavics/elozmenyek.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/clover/src/kavicsos_jatek/kavics/jatekablak.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/clover/src/kavicsos_jatek/kavics/kezdokepernyo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/clover/src/kavicsos_jatek/kavics/package-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/clover/src/kavicsos_jatek/kavics/szabalyok.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/clover/surefire-reports/TEST-kavicsos_jatek.kavics.jatekablakTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/clover/surefire-reports/kavicsos_jatek.kavics.jatekablakTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/clover/test-classes/logback-test.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/javadoc-bundle-options/javadoc-options-javadoc-resources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/javadoc-bundle-options/package-list" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/apidocs/allclasses-frame.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/apidocs/allclasses-noframe.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/apidocs/constant-values.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/apidocs/deprecated-list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/apidocs/help-doc.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/apidocs/index-all.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/apidocs/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/apidocs/jquery/external/jquery/jquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/apidocs/jquery/images/ui-bg_flat_0_aaaaaa_40x100.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/apidocs/jquery/images/ui-bg_flat_75_ffffff_40x100.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/apidocs/jquery/images/ui-bg_glass_55_fbf9ee_1x400.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/apidocs/jquery/images/ui-bg_glass_65_ffffff_1x400.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/apidocs/jquery/images/ui-bg_glass_75_dadada_1x400.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/apidocs/jquery/images/ui-bg_glass_75_e6e6e6_1x400.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/apidocs/jquery/images/ui-bg_glass_95_fef1ec_1x400.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/apidocs/jquery/images/ui-bg_highlight-soft_75_cccccc_1x100.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/apidocs/jquery/images/ui-icons_222222_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/apidocs/jquery/images/ui-icons_2e83ff_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/apidocs/jquery/images/ui-icons_454545_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/apidocs/jquery/images/ui-icons_888888_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/apidocs/jquery/images/ui-icons_cd0a0a_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/apidocs/jquery/jquery-1.10.2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/apidocs/jquery/jquery-ui.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/apidocs/jquery/jquery-ui.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/apidocs/jquery/jquery-ui.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/apidocs/jquery/jquery-ui.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/apidocs/jquery/jquery-ui.structure.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/apidocs/jquery/jquery-ui.structure.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/apidocs/jquery/jszip-utils/dist/jszip-utils-ie.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/apidocs/jquery/jszip-utils/dist/jszip-utils-ie.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/apidocs/jquery/jszip-utils/dist/jszip-utils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/apidocs/jquery/jszip-utils/dist/jszip-utils.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/apidocs/jquery/jszip/dist/jszip.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/apidocs/jquery/jszip/dist/jszip.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/apidocs/kavicsos_jatek/kavics/class-use/elozmenyek.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/apidocs/kavicsos_jatek/kavics/class-use/jatekablak.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/apidocs/kavicsos_jatek/kavics/class-use/kezdokepernyo.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/apidocs/kavicsos_jatek/kavics/class-use/szabalyok.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/apidocs/kavicsos_jatek/kavics/elozmenyek.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/apidocs/kavicsos_jatek/kavics/jatekablak.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/apidocs/kavicsos_jatek/kavics/kezdokepernyo.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/apidocs/kavicsos_jatek/kavics/package-frame.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/apidocs/kavicsos_jatek/kavics/package-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/apidocs/kavicsos_jatek/kavics/package-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/apidocs/kavicsos_jatek/kavics/package-use.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/apidocs/kavicsos_jatek/kavics/szabalyok.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/apidocs/member-search-index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/apidocs/overview-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/apidocs/package-list" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/apidocs/package-search-index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/apidocs/resources/glass.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/apidocs/resources/x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/apidocs/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/apidocs/search.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/apidocs/stylesheet.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/apidocs/type-search-index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/checkstyle.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/checkstyle.rss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/agg-pkgs.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/aui/css/arrow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/aui/css/atlassian-icons.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/aui/css/atlassian-icons.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/aui/css/atlassian-icons.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/aui/css/atlassian-icons.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/aui/css/aui-experimental.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/aui/css/aui-icon-close.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/aui/css/aui-icon-tools.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/aui/css/aui-ie9.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/aui/css/aui-toolbar-24px.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/aui/css/aui.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/aui/css/bg-000-trans20.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/aui/css/bg-000-trans50.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/aui/css/bg-grippy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/aui/css/core/icon-dropdown-active-d.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/aui/css/core/icon-dropdown-active.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/aui/css/core/icon-dropdown-d.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/aui/css/core/icon-dropdown.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/aui/css/core/icon-maximize-d.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/aui/css/core/icon-maximize.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/aui/css/core/icon-minimize-d.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/aui/css/core/icon-minimize.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/aui/css/core/icon-move-d.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/aui/css/core/icon-move.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/aui/css/core/icon-search.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/aui/css/fav_off_16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/aui/css/fav_on_16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/aui/css/fonts/atlassian-icons.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/aui/css/fonts/atlassian-icons.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/aui/css/fonts/atlassian-icons.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/aui/css/fonts/atlassian-icons.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/aui/css/forms/icon-date.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/aui/css/forms/icon-help.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/aui/css/forms/icon-range.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/aui/css/forms/icon-required.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/aui/css/forms/icon-users.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/aui/css/forms/icons_form.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/aui/css/icons/aui-icon-close.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/aui/css/icons/aui-icon-tools.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/aui/css/icons/aui-message-icon-sprite.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/aui/css/icons/core/icon-dropdown-active-d.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/aui/css/icons/core/icon-dropdown-active.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/aui/css/icons/core/icon-dropdown-d.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/aui/css/icons/core/icon-dropdown.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/aui/css/icons/core/icon-maximize-d.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/aui/css/icons/core/icon-maximize.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/aui/css/icons/core/icon-minimize-d.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/aui/css/icons/core/icon-minimize.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/aui/css/icons/core/icon-move-d.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/aui/css/icons/core/icon-move.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/aui/css/icons/core/icon-search.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/aui/css/icons/forms/icon-date.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/aui/css/icons/forms/icon-help.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/aui/css/icons/forms/icon-range.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/aui/css/icons/forms/icon-required.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/aui/css/icons/forms/icon-users.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/aui/css/icons/messages/icon-close-inverted.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/aui/css/icons/messages/icon-close.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/aui/css/icons/messages/icon-error-white.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/aui/css/icons/messages/icon-error.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/aui/css/icons/messages/icon-generic.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/aui/css/icons/messages/icon-hint.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/aui/css/icons/messages/icon-info.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/aui/css/icons/messages/icon-success.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/aui/css/icons/messages/icon-warning.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/aui/css/images/arrow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/aui/css/images/bg-000-trans20.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/aui/css/images/bg-000-trans50.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/aui/css/images/fav_off_16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/aui/css/images/fav_on_16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/aui/css/images/forms/icons_form.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/aui/css/images/icons/aui-message-icon-sprite.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/aui/css/images/icons/messages/icon-close-inverted.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/aui/css/images/icons/messages/icon-close.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/aui/css/images/icons/messages/icon-error-white.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/aui/css/images/icons/messages/icon-error.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/aui/css/images/icons/messages/icon-generic.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/aui/css/images/icons/messages/icon-hint.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/aui/css/images/icons/messages/icon-info.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/aui/css/images/icons/messages/icon-success.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/aui/css/images/icons/messages/icon-warning.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/aui/css/images/wait.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/aui/css/messages/icon-close-inverted.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/aui/css/messages/icon-close.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/aui/css/select2-spinner.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/aui/css/select2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/aui/css/select2x2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/aui/css/toolbar/aui-toolbar-24px.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/aui/css/wait.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/aui/js/aui-datepicker.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/aui/js/aui-experimental.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/aui/js/aui-soy.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/aui/js/aui.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/cloud.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/clover-descriptions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/clover-tree.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/clover.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/clover.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/dashboard.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/img/ajax-loader.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/img/back.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/img/classComplexityChart.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/img/classDistrubutionChart.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/img/clover.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/img/clover_logo_large.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/img/collapse.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/img/expand.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/img/failure_gutter.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/img/logo.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/img/spacer.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/img/srcFileCovDistChart0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/img/srcFileCovDistChart1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/img/srcFileCovDistChart10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/img/srcFileCovDistChart2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/img/srcFileCovDistChart3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/img/srcFileCovDistChart4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/img/srcFileCovDistChart5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/img/srcFileCovDistChart6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/img/srcFileCovDistChart7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/img/srcFileCovDistChart8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/img/srcFileCovDistChart9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/img/treemap.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/jit.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/jquery-1.8.3.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/kavicsos_jatek/kavics/elozmenyek.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/kavicsos_jatek/kavics/elozmenyek.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/kavicsos_jatek/kavics/jatekablak.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/kavicsos_jatek/kavics/jatekablak.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/kavicsos_jatek/kavics/jatekablakTest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/kavicsos_jatek/kavics/jatekablakTest.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/kavicsos_jatek/kavics/jatekablakTest_test_0.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/kavicsos_jatek/kavics/jatekablakTest_test_1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/kavicsos_jatek/kavics/jatekablakTest_test_2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/kavicsos_jatek/kavics/jatekablakTest_test_4.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/kavicsos_jatek/kavics/jatekvegeTest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/kavicsos_jatek/kavics/jatekvegeTest.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/kavicsos_jatek/kavics/jatekvegeTest_test_3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/kavicsos_jatek/kavics/kezdokepernyo.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/kavicsos_jatek/kavics/kezdokepernyo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/kavicsos_jatek/kavics/package-info.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/kavicsos_jatek/kavics/package-info.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/kavicsos_jatek/kavics/pkg-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/kavicsos_jatek/kavics/quick-wins.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/kavicsos_jatek/kavics/szabalyok.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/kavicsos_jatek/kavics/szabalyok.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/kavicsos_jatek/kavics/test-jatekablakTest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/kavicsos_jatek/kavics/test-jatekvegeTest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/kavicsos_jatek/kavics/test-pkg-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/kavicsos_jatek/kavics/testsrc-pkg-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/kavicsos_jatek/kavics/top-risks.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/package-nodes-tree.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/pkg-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/project.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/quick-wins.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/test-pkg-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/testsrc-agg-pkgs.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/testsrc-pkg-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/top-risks.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/tree.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/treemap-dash-json.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/treemap-json.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/clover/treemap.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/css/maven-base.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/css/maven-theme.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/css/print.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/css/site.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/dependencies.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/dependency-info.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/images/close.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/images/collapsed.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/images/expanded.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/images/external.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/images/icon_error_sml.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/images/icon_info_sml.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/images/icon_success_sml.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/images/icon_warning_sml.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/images/logos/build-by-maven-black.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/images/logos/build-by-maven-white.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/images/logos/maven-feather.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/images/newwindow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/images/rss.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/license.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/plugin-management.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/plugins.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/project-info.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/project-reports.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/project-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/source-repository.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/surefire-report.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/team-list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/testapidocs/allclasses-frame.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/testapidocs/allclasses-noframe.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/testapidocs/constant-values.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/testapidocs/deprecated-list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/testapidocs/help-doc.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/testapidocs/index-all.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/testapidocs/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/testapidocs/jquery/external/jquery/jquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/testapidocs/jquery/images/ui-bg_flat_0_aaaaaa_40x100.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/testapidocs/jquery/images/ui-bg_flat_75_ffffff_40x100.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/testapidocs/jquery/images/ui-bg_glass_55_fbf9ee_1x400.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/testapidocs/jquery/images/ui-bg_glass_65_ffffff_1x400.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/testapidocs/jquery/images/ui-bg_glass_75_dadada_1x400.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/testapidocs/jquery/images/ui-bg_glass_75_e6e6e6_1x400.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/testapidocs/jquery/images/ui-bg_glass_95_fef1ec_1x400.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/testapidocs/jquery/images/ui-bg_highlight-soft_75_cccccc_1x100.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/testapidocs/jquery/images/ui-icons_222222_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/testapidocs/jquery/images/ui-icons_2e83ff_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/testapidocs/jquery/images/ui-icons_454545_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/testapidocs/jquery/images/ui-icons_888888_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/testapidocs/jquery/images/ui-icons_cd0a0a_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/testapidocs/jquery/jquery-1.10.2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/testapidocs/jquery/jquery-ui.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/testapidocs/jquery/jquery-ui.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/testapidocs/jquery/jquery-ui.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/testapidocs/jquery/jquery-ui.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/testapidocs/jquery/jquery-ui.structure.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/testapidocs/jquery/jquery-ui.structure.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/testapidocs/jquery/jszip-utils/dist/jszip-utils-ie.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/testapidocs/jquery/jszip-utils/dist/jszip-utils-ie.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/testapidocs/jquery/jszip-utils/dist/jszip-utils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/testapidocs/jquery/jszip-utils/dist/jszip-utils.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/testapidocs/jquery/jszip/dist/jszip.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/testapidocs/jquery/jszip/dist/jszip.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/testapidocs/kavicsos_jatek/kavics/class-use/jatekablakTest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/testapidocs/kavicsos_jatek/kavics/class-use/jatekablak_test.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/testapidocs/kavicsos_jatek/kavics/class-use/jatekvegeTest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/testapidocs/kavicsos_jatek/kavics/jatekablakTest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/testapidocs/kavicsos_jatek/kavics/jatekablak_test.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/testapidocs/kavicsos_jatek/kavics/jatekvegeTest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/testapidocs/kavicsos_jatek/kavics/package-frame.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/testapidocs/kavicsos_jatek/kavics/package-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/testapidocs/kavicsos_jatek/kavics/package-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/testapidocs/kavicsos_jatek/kavics/package-use.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/testapidocs/member-search-index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/testapidocs/overview-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/testapidocs/package-list" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/testapidocs/package-search-index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/testapidocs/resources/glass.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/testapidocs/resources/x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/testapidocs/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/testapidocs/search.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/testapidocs/stylesheet.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/testapidocs/type-search-index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/xref-test/allclasses-frame.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/xref-test/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/xref-test/kavicsos_jatek/kavics/jatekablakTest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/xref-test/kavicsos_jatek/kavics/jatekablak_test.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/xref-test/kavicsos_jatek/kavics/jatekvegeTest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/xref-test/kavicsos_jatek/kavics/package-frame.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/xref-test/kavicsos_jatek/kavics/package-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/xref-test/overview-frame.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/xref-test/overview-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/xref-test/stylesheet.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/xref/allclasses-frame.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/xref/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/xref/kavicsos_jatek/kavics/elozmenyek.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/xref/kavicsos_jatek/kavics/jatekablak.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/xref/kavicsos_jatek/kavics/kezdokepernyo.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/xref/kavicsos_jatek/kavics/package-frame.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/xref/kavicsos_jatek/kavics/package-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/xref/kavicsos_jatek/kavics/szabalyok.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/xref/overview-frame.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/xref/overview-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/xref/stylesheet.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-kavicsos_jatek.kavics.jatekablakTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-kavicsos_jatek.kavics.jatekvegeTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/kavicsos_jatek.kavics.jatekablakTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/kavicsos_jatek.kavics.jatekvegeTest.txt" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -34,80 +429,90 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DefaultGradleProjectSettings">
-    <option name="testRunner" value="GRADLE" />
-    <option name="delegatedBuild" value="true" />
+    <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+        <entry file="file://$PROJECT_DIR$/src/main/java/kavicsosjatek/kavics/controller/Elozmenyek.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="333">
-              <caret line="273" column="36" selection-start-line="273" selection-start-column="36" selection-end-line="273" selection-end-column="36" />
+            <state relative-caret-position="1037">
+              <caret line="65" column="7" selection-start-line="65" selection-start-column="7" selection-end-line="65" selection-end-column="7" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/kavicsos_jatek/kavics/package-info.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/kavicsosjatek/kavics/controller/package-info.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="17">
-              <caret line="1" column="18" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
+              <caret line="1" column="5" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/kavicsosjatek/kavics/model/package-info.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/kavicsosjatek/kavics/view/package-info.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" column="31" selection-start-line="1" selection-start-column="31" selection-end-line="1" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/kavicsosjatek/kavics/controller/Szabalyok.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/kavicsos_jatek/kavics/elozmenyek.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/kavicsosjatek/kavics/view/Jatekablak.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="537">
-              <caret line="79" column="6" selection-start-line="79" selection-start-column="6" selection-end-line="79" selection-end-column="6" />
+            <state relative-caret-position="272">
+              <caret line="400" column="45" lean-forward="true" selection-start-line="400" selection-start-column="45" selection-end-line="400" selection-end-column="45" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/kavicsos_jatek/kavics/jatekablak.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/kavicsosjatek/kavics/model/dao/Dao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="25" column="19" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/kavicsos_jatek/kavics/jatekablakTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="31" column="17" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
+            <state>
+              <caret column="14" selection-start-column="14" selection-end-column="14" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#599#600#0" expanded="true" />
-                <element signature="e#668#669#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/checkstyle.xml">
+        <entry file="file://$PROJECT_DIR$/src/main/java/kavicsosjatek/kavics/model/dao/package-info.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="9" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
+            <state relative-caret-position="17">
+              <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/logback-test.xml">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/kavicsos_jatek/kavics/kezdokepernyo.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/kavicsosjatek/kavics/controller/Kezdokepernyo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="119" column="18" selection-start-line="119" selection-start-column="18" selection-end-line="119" selection-end-column="18" />
+            <state relative-caret-position="153">
+              <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -117,8 +522,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit4 Test Class" />
+        <option value="Class" />
         <option value="package-info" />
       </list>
     </option>
@@ -129,7 +534,19 @@
       <find>reporting</find>
       <find>jun</find>
       <find>jacoco</find>
+      <find>kezd</find>
+      <find>mezok</find>
+      <find>board</find>
+      <find>fjl</find>
+      <find>fajl</find>
+      <find>jatszmak</find>
+      <find>nyertes</find>
+      <find>pontosdatum</find>
+      <find>logger</find>
     </findStrings>
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -142,9 +559,33 @@
         <option value="$PROJECT_DIR$/src/test/java/kavicsos_jatek/kavics/jatekablak_test.java" />
         <option value="$PROJECT_DIR$/src/test/kavicsos_jatek/kavics/jatekablak_test.java" />
         <option value="$PROJECT_DIR$/src/test/java/kavicsos_jatek/kavics/jatekablakTest.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/kavicsos_jatek/kavics/package-info.java" />
         <option value="$PROJECT_DIR$/src/main/java/kavicsos_jatek/kavics/elozmenyek.java" />
+        <option value="$PROJECT_DIR$/src/main/java/kavicsosjatek/kavics/package-info.java" />
+        <option value="$PROJECT_DIR$/src/main/java/kavicsosjatek/kavics/elozmenyek.java" />
+        <option value="$PROJECT_DIR$/src/main/java/kavicsosjatek/kavics/jatekablak.java" />
+        <option value="$PROJECT_DIR$/src/main/java/kavicsosjatek/kavics/controller/Drawning.java" />
+        <option value="$PROJECT_DIR$/src/main/java/kavicsosjatek/kavics/view/jatekablak.java" />
+        <option value="$PROJECT_DIR$/src/main/java/kavicsosjatek/kavics/kezdokepernyo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/kavicsosjatek/kavics/controller/kezdokepernyo.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/kavicsosjatek/kavics/Elozmenyek.java" />
+        <option value="$PROJECT_DIR$/src/main/java/kavicsosjatek/kavics/szabalyok.java" />
+        <option value="$PROJECT_DIR$/src/main/java/kavicsosjatek/kavics/Szabalyok.java" />
+        <option value="$PROJECT_DIR$/src/main/java/kavicsosjatek/kavics/model/Ellenorzes.java" />
+        <option value="$PROJECT_DIR$/src/main/java/kavicsosjatek/kavics/controller/Szabalyok.java" />
+        <option value="$PROJECT_DIR$/src/main/java/kavicsosjatek/kavics/controller/Kezdokepernyo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/kavicsosjatek/kavics/controller/Elozmenyek.java" />
+        <option value="$PROJECT_DIR$/src/main/java/kavicsosjatek/kavics/controller/package-info.java" />
+        <option value="$PROJECT_DIR$/src/main/java/kavicsosjatek/kavics/model/package-info.java" />
+        <option value="$PROJECT_DIR$/src/main/java/kavicsosjatek/kavics/model/dto/package-info.java" />
+        <option value="$PROJECT_DIR$/src/main/java/kavicsosjatek/kavics/view/package-info.java" />
+        <option value="$PROJECT_DIR$/src/main/java/kavicsosjatek/kavics/model/dto/Dto.java" />
+        <option value="$PROJECT_DIR$/src/main/java/kavicsosjatek/kavics/model/dto/Dao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/kavicsosjatek/kavics/model/dao/Dao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/kavicsosjatek/kavics/model/dao/package-info.java" />
+        <option value="$PROJECT_DIR$/target/clover/src-instrumented/kavicsosjatek/kavics/view/Jatekablak.java" />
+        <option value="$PROJECT_DIR$/src/main/java/kavicsosjatek/kavics/view/Jatekablak.java" />
       </list>
     </option>
   </component>
@@ -205,6 +646,43 @@
               <item name="4x4GAME-Jusztinn" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="kavics" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kavics" type="b2602c69:ProjectViewProjectNode" />
+              <item name="4x4GAME-Jusztinn" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="kavics" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kavics" type="b2602c69:ProjectViewProjectNode" />
+              <item name="4x4GAME-Jusztinn" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="kavics" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kavics" type="b2602c69:ProjectViewProjectNode" />
+              <item name="4x4GAME-Jusztinn" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="kavics" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kavics" type="b2602c69:ProjectViewProjectNode" />
+              <item name="4x4GAME-Jusztinn" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -223,10 +701,77 @@
             <path>
               <item name="kavics" type="b2602c69:ProjectViewProjectNode" />
               <item name="4x4GAME-Jusztinn" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kavics" type="b2602c69:ProjectViewProjectNode" />
+              <item name="4x4GAME-Jusztinn" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="clover" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kavics" type="b2602c69:ProjectViewProjectNode" />
+              <item name="4x4GAME-Jusztinn" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="clover" type="462c0819:PsiDirectoryNode" />
+              <item name="src-instrumented" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kavics" type="b2602c69:ProjectViewProjectNode" />
+              <item name="4x4GAME-Jusztinn" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="clover" type="462c0819:PsiDirectoryNode" />
+              <item name="src-instrumented" type="462c0819:PsiDirectoryNode" />
+              <item name="kavicsosjatek" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kavics" type="b2602c69:ProjectViewProjectNode" />
+              <item name="4x4GAME-Jusztinn" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="clover" type="462c0819:PsiDirectoryNode" />
+              <item name="src-instrumented" type="462c0819:PsiDirectoryNode" />
+              <item name="kavicsosjatek" type="462c0819:PsiDirectoryNode" />
               <item name="kavics" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kavics" type="b2602c69:ProjectViewProjectNode" />
+              <item name="4x4GAME-Jusztinn" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="clover" type="462c0819:PsiDirectoryNode" />
+              <item name="src-instrumented" type="462c0819:PsiDirectoryNode" />
+              <item name="kavicsosjatek" type="462c0819:PsiDirectoryNode" />
+              <item name="kavics" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kavics" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="kavics" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="kavics" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kavics" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kavics" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -241,6 +786,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/kavicsosjatek/kavics/model" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -265,7 +811,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Maven.Site">
+  <component name="RunManager" selected="Maven.kavics [clean,install,-T,8]">
     <configuration name="jatekablak_test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="kavics" />
       <extension name="coverage">
@@ -308,9 +854,38 @@
       </MavenSettings>
       <method v="2" />
     </configuration>
+    <configuration name="kavics [clean,install,-T,8]" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="clean" />
+                <option value="install" />
+                <option value="-T" />
+                <option value="8" />
+              </list>
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
     <list>
-      <item itemvalue="Maven.Site" />
       <item itemvalue="JUnit.jatekablak_test" />
+      <item itemvalue="Maven.Site" />
+      <item itemvalue="Maven.kavics [clean,install,-T,8]" />
     </list>
     <recent_temporary>
       <list>
@@ -329,6 +904,7 @@
       <option name="presentableId" value="Default" />
       <updated>1558033818411</updated>
       <workItem from="1558033822040" duration="1354000" />
+      <workItem from="1559592946641" duration="3562000" />
     </task>
     <servers />
   </component>
@@ -338,57 +914,53 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1354000" />
+    <option name="totallyTimeSpent" value="4916000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Image Layers" />
-      <window_info id="Designer" />
-      <window_info id="UI Designer" />
-      <window_info id="Capture Tool" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25266525" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Messages" weight="0.32936078" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Version Control" weight="0.32936078" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32936078" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32936078" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Maven" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Database" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32936078" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32936078" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32936078" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Maven" order="6" />
+      <window_info anchor="right" id="Capture Analysis" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/kavicsos_jatek/kavics/kezdokepernyo.java">
+    <entry file="file://$PROJECT_DIR$/src/test/kavicsos_jatek/kavics/jatekablak_test.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/kavicsos_jatek/kavics/jatekablak_test.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/kavicsosjatek/kavics/jatekablakTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="119" column="18" selection-start-line="119" selection-start-column="18" selection-end-line="119" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/kavicsos_jatek/kavics/jatekablak_test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="14" lean-forward="true" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
+        <state relative-caret-position="459">
+          <caret line="32" column="17" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -405,55 +977,127 @@
     <entry file="file://$PROJECT_DIR$/src/test/resources/logback-test.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/kavicsos_jatek/kavics/jatekablak.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="25" column="19" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/kavicsos_jatek/kavics/jatekablak_test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="5" lean-forward="true" selection-start-line="23" selection-start-column="2" selection-end-line="26" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#437#438#0" expanded="true" />
-            <element signature="e#497#498#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/kavicsos_jatek/kavics/jatekablakTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="31" column="17" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#599#600#0" expanded="true" />
-            <element signature="e#668#669#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="273" column="36" selection-start-line="273" selection-start-column="36" selection-end-line="273" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/kavicsos_jatek/kavics/package-info.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/kavicsosjatek/kavics/package-info.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="18" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/kavicsos_jatek/kavics/elozmenyek.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/kavicsosjatek/kavics/controller/Drawning.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/Objects.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="537">
-          <caret line="79" column="6" selection-start-line="79" selection-start-column="6" selection-end-line="79" selection-end-column="6" />
+        <state relative-caret-position="299">
+          <caret line="200" column="24" selection-start-line="200" selection-start-column="24" selection-end-line="200" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-833">
+          <caret line="14" column="45" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/clover/src-test-instrumented/kavicsosjatek/kavics/jatekablakTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="21" column="37" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/kavicsosjatek/kavics/model/Ellenorzes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/kavicsosjatek/kavics/controller/Szabalyok.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/kavicsosjatek/kavics/controller/Kezdokepernyo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/kavicsosjatek/kavics/controller/Elozmenyek.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1037">
+          <caret line="65" column="7" selection-start-line="65" selection-start-column="7" selection-end-line="65" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/kavicsosjatek/kavics/controller/package-info.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="5" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/kavicsosjatek/kavics/model/package-info.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/kavicsosjatek/kavics/model/dto/package-info.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="14" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/kavicsosjatek/kavics/view/package-info.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="31" selection-start-line="1" selection-start-column="31" selection-end-line="1" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/kavicsosjatek/kavics/model/dao/Dao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="14" selection-start-column="14" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/clover/src-instrumented/kavicsosjatek/kavics/view/Jatekablak.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3862">
+          <caret line="401" column="46" selection-start-line="401" selection-start-column="46" selection-end-line="401" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/kavicsosjatek/kavics/model/dao/package-info.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/kavicsosjatek/kavics/view/Jatekablak.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="400" column="45" lean-forward="true" selection-start-line="400" selection-start-column="45" selection-end-line="400" selection-end-column="45" />
         </state>
       </provider>
     </entry>

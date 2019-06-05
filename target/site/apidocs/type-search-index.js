@@ -1,1 +1,0 @@
-typeSearchIndex = [{"p":"kavicsos_jatek.kavics","l":"elozmenyek"},{"p":"kavicsos_jatek.kavics","l":"jatekablak"},{"p":"kavicsos_jatek.kavics","l":"kezdokepernyo"},{"p":"kavicsos_jatek.kavics","l":"szabalyok"}]
